@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/oldpaper.jpg);
+}
+
+img {
+	height: 150px;
+	width: 125px; 
+	padding: 10px;
+}
+
+.container {
+	background-image: url(../images/background-image.jpg);
+	background-position: center;
+	width: 960px;
+	height: 750px;
+	margin: 0 auto;
+	border: 3px solid gray;
+	vertical-align: middle;
+}
+
+.nav-link {
+	margin: 3px;
+	hover
+}
+
+.title {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: 900px;
+	color: white;
+	padding: 20px;
+	float: left;
+}
+
+.card-title {
+	color: white;
+}
+
+.message {
+	margin-top: 50px; 
+	color: white;
+}
+
+.btn {
+	margin: auto;
+}
+
+#playerArea {
+	margin: auto;
+}

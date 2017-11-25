@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars RPG Game</title>
+
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
+	<!-- JQuery CDN-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-md navbar-default">
+    		<div class="container-fluid">
+      			<h1 class="title">Star Wars RPG Game</h1>
+    		
+    		<!-- New Game and Quit links -->
+    		<div class="d-flex justify-content-end">
+        		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          			<ul class="nav navbar-nav nav-pills navbar-right">
+            			<li class="nav-item">
+              				<button type="button" class="nav-link active" id="reset">New Game</button>
+              			</li>	
+            			<li class="nav-item">
+              				<button type="button" class="nav-link active" id="quit">Quit Game</button>
+              			</li>
+          			</ul>
+        		</div>  
+      		</div>
+  		</nav>
+
+  		<!-- Placeholders for Characters -->
+  		<div class="row">
+		
+		<!-- Empty column -->
+		<div class="col-md-2"></div>
+
+		<div class="col-md-8">
+  			<div class="card-deck" id="selection">
+  				<div class="card" id="quiGonJin" style="background-color: #333; border-color: #333;">
+    				<img class="card-img-top" src="./assets/images/qui-gon-jin.jpg" alt="Qui-Gon Jin">
+    					<div class="card-body text-center">
+      						<h6 class="card-title">Qui-Gon Jin</h6>
+      						<p class="card-text"><small class="text-muted" id="health">HEALTH: 100</small></p>
+    					</div>
+  				</div>
+  				<div class="card" id="darthMaul" style="background-color: #333; border-color: #333;">
+    				<img class="card-img-top" src="./assets/images/darth-maul.jpg" alt="Darth Maul">
+    					<div class="card-body text-center">
+      						<h6 class="card-title">Darth Maul</h6>
+      						<p class="card-text"><small class="text-muted" id="health">HEALTH: 120</small></p>
+    					</div>
+  				</div>
+  				<div class="card" id="obiWanKenobi" style="background-color: #333; border-color: #333;">
+    				<img class="card-img-top" src="./assets/images/obi-wan-kenobi.jpg" alt="Obi-Wan Kenobi">
+    					<div class="card-body text-center">
+      						<h6 class="card-title">Obi-Wan Kenobi</h6>
+         					<p class="card-text"><small class="text-muted" id="health">HEALTH: 110</small></p>
+    					</div>
+  				</div>
+  				<div class="card" id="darthVader" style="background-color: #333; border-color: #333;">
+    				<img class="card-img-top" src="./assets/images/darth-vader.jpg" alt="Darth Vader">
+    					<div class="card-body text-center">
+      						<h6 class="card-title">Darth Vader</h6>
+      						<p class="card-text"><small class="text-muted" id="health">HEALTH: 70</small></p>
+    					</div>
+  				</div>
+			</div>
+		</div>
+
+		<!-- Empty column -->
+		<div class="col-md-2"></div>
+		
+		</div>
+
+		<br>
+		<br>
+		<!-- Fight Area -->
+		<div class="row">
+			
+		<!-- Empty column -->
+		<div class="col-md-1"></div>
+
+
+		<!-- Player's character area -->
+		<div class="col-md-3" id="playerArea">
+			
+		</div>
+
+		<!-- Empty column -->
+		<div class="col-md-1"></div>
+		
+		<!-- Attck and Damage Message -->
+		<div class="col-md-2">
+
+			<!-- Message -->
+			<div class="row text-center">
+				<h5 class="message">Choose your Character!</h5>
+			</div>
+
+				<br>
+
+			<!-- Attack -->
+			<div class="row">
+				<button type="button" class="btn btn-lg btn-danger">Attack</button>
+			</div>
+			
+		</div>	
+
+		<!-- Empty column -->
+		<div class="col-md-1"></div>
+
+		<!-- Enemy's character area -->
+		<div class="col-md-3" id="enemyArea">
+			
+		</div>
+
+		<!-- Empty column -->
+		<div class="col-md-1"></div>
+			
+		</div>
+	</div>
+
+	<!-- Link to JS file -->
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
+	
+</body>
+</html>
